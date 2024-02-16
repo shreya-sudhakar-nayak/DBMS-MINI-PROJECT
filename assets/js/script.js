@@ -63,3 +63,15 @@ $(document).ready(function(){
         autoPlay:true
     });
 });
+function goToNextPage() {
+     
+      window.location.href = 'pricing.html';
+    }
+function goToNextPage1() {
+     
+      window.location.href = 'contact_us.html';
+    }
+    function goToNextPage2() {
+       
+        window.location.href = 'login.html';
+      }
