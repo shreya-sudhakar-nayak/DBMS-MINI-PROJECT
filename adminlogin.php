@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         // Valid login
         $_SESSION['username'] = $username;
-        header("Location: admin_home.html"); // Redirect to a welcome page
+        header("Location: admin_home.php"); // Redirect to a welcome page
         exit();
     } else {
         echo "<script>alert('Invalid username or password');</script>";
