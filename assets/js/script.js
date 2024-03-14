@@ -73,5 +73,5 @@ function goToNextPage1() {
     }
     function goToNextPage2() {
        
-        window.location.href = 'login.html';
+        window.location.href = 'login.php';
       }
