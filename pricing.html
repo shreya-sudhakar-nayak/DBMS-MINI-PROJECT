@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-12 nav-img">
                         <!-- <img src="assets/images/logo.png" alt=""> -->
-						 <div style="float:left; padding:10px; color:white; background-color:#32a8ed ;font-weight:bold"  onclick="goToNextPage2()">Login/Signup</div>
+						 <div style="float:left; padding:10px; color:white; background-color:#32a8ed ;font-weight:bold"  onclick="goToNextPage2()">Signout</div>
                         <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
                     </div>
                     <div id="menu" class="col-md-9 d-none d-md-block nav-item">
@@ -53,9 +53,9 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about_us.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
-                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="profile.php">Profile</a></li>
                             <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="contact_us.html">Contact Us</a></li>
+                            <li><a href="contact_us.php">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -88,6 +88,7 @@
      
           <!-- ################# Packages Starts Here#######################--->
     <section class="packages">
+	<form action="book.php" method="post">
         <div class="container">
            
             <div class="row">
@@ -120,7 +121,7 @@
                             
                         </div>
                         <div class="product-order">
-                            <a class="btn btn-info" href="products-cloud-hosting.html#cloud-starter-monthly">
+                            <a class="btn btn-info" href="book.php" data-sid="SSDK1">
                                 <i class="fas fa-shopping-cart icon-left"></i>Order Now
                             </a>
                         </div>
@@ -158,8 +159,8 @@
                             
                         </div>
                         <div class="product-order">
-                            <a class="btn btn-info" href="products-cloud-hosting.html#cloud-starter-monthly">
-                                <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                            <a class="btn btn-info" href="book.php" data-sid="SSDK2">
+                                <i class="fas fa-shopping-cart icon-left" ></i>Order Now
                             </a>
                         </div>
                     </div>
@@ -195,7 +196,7 @@
 
                         </div>
                         <div class="product-order">
-                            <a class="btn btn-info" href="products-cloud-hosting.html#cloud-starter-monthly">
+                            <a class="btn btn-info" href="book.php" data-sid="SSDK3">
                                 <i class="fas fa-shopping-cart icon-left"></i>Order Now
                             </a>
                         </div>
@@ -233,7 +234,7 @@
                             
                         </div>
                         <div class="product-order">
-                            <a class="btn btn-info" href="products-cloud-hosting.html#cloud-starter-monthly">
+                            <a class="btn btn-info" href="book.php" data-sid="SSDK4">
                                 <i class="fas fa-shopping-cart icon-left"></i>Order Now
                             </a>
                         </div>
@@ -271,7 +272,7 @@
                             
                         </div>
                         <div class="product-order">
-                            <a class="btn btn-info" href="products-cloud-hosting.html#cloud-starter-monthly">
+                            <a class="btn btn-info" href="book.php" data-sid="SSDK5">
                                 <i class="fas fa-shopping-cart icon-left"></i>Order Now
                             </a>
                         </div>
@@ -306,7 +307,7 @@
                             
                         </div>
                         <div class="product-order">
-                            <a class="btn btn-info" href="products-cloud-hosting.html#cloud-starter-monthly">
+                            <a class="btn btn-info" href="book.php" data-sid="SSDK6">
                                 <i class="fas fa-shopping-cart icon-left"></i>Order Now
                             </a>
                         </div>
@@ -314,6 +315,9 @@
                 </div>
             </div>
         </div>
+		<input type="hidden" id="sid" name="sid" value="SSDK1">
+
+		</form>
     </section>
   
     <footer class="footer">
@@ -368,6 +372,7 @@
             </div>
 
         </div>
+		
     
     </body>
 
